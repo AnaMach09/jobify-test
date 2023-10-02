@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 };
 
-app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.static(path.resolve(__dirname, './jobyfy/dist')));
 app.use(cookieParser());
 app.use(express.json());
 
@@ -58,7 +58,7 @@ app.use('/api/v1/auth', authRouter);
 
 
 app.get('*', (req,res) => {
-  res.sendFile(path.resolve(__dirname, './public', 'index.html'))
+  res.sendFile(path.resolve(__dirname, './jobyfy/dist', 'index.html'))
 })
 
 
@@ -81,5 +81,5 @@ try {
 } catch (error) {
   console.log(error);
   process.exit(1);
-}
+};
 
