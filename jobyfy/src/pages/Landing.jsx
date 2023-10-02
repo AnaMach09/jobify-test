@@ -3,7 +3,7 @@ import Wrapper from "../assets/wrappers/LandingPage";
 import main from '../assets/images/main.svg';
 import logo from '../assets/images/logo.svg';
 import { Link } from "react-router-dom";
-import Logo from "../components/logo";
+import Logo from "../components/Logo";
 
 
 const Landing = () => {
