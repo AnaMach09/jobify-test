@@ -5,7 +5,7 @@ import { Register,
   DashboardLayout,
   Landing,
   Error,
-  Homelayout,
+  HomeLayout,
   AddJob,
   Stats, 
   AllJobs,
@@ -23,7 +23,7 @@ import {loader as editJobLoader } from './pages/EditJob';
 import { action as editJobAction} from './pages/EditJob';
 import { action as deleteJobAction} from './pages/DeleteJob';
 import { loader as adminLoader} from './pages/Admin';
-import { action as profileAction} from './pages/profile';
+import { action as profileAction} from './pages/Profile';
 import { loader as statsLoader} from './pages/Stats';
 
 export const checkDefaultTheme = () => {
